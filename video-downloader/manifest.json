@@ -1,6 +1,6 @@
 {
   "name": "Video Downloader",
-  "description": "Base Level Extension",
+  "description": "Download MP4 videos from websites",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
@@ -10,7 +10,8 @@
   "permissions": [
     "scripting",
     "activeTab",
-    "tabs"
+    "tabs",
+    "downloads"
   ],
   "host_permissions": ["<all_urls>"]
 }
