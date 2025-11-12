@@ -1,0 +1,17 @@
+{
+  "name": "Video Downloader",
+  "description": "Download MP4 videos from websites",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "downloads"
+  ],
+  "host_permissions": ["<all_urls>"]
+}

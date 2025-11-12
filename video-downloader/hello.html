@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <style>
+      body {
+        width: 350px;
+        padding: 15px;
+        font-family: Arial, sans-serif;
+      }
+      h3 {
+        margin-top: 0;
+        color: #333;
+      }
+      #status {
+        margin: 10px 0;
+        padding: 10px;
+        background: #f0f0f0;
+        border-radius: 4px;
+        min-height: 20px;
+      }
+      #videoList {
+        margin-top: 10px;
+      }
+      .video-item {
+        margin: 8px 0;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .video-url {
+        font-size: 11px;
+        color: #666;
+        word-break: break-all;
+        margin: 5px 0;
+      }
+      .video-size {
+        font-size: 12px;
+        color: #0066cc;
+        font-weight: bold;
+        margin: 5px 0;
+      }
+      button {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 5px;
+      }
+      button:hover {
+        background: #45a049;
+      }
+      button:disabled {
+        background: #cccccc;
+        cursor: not-allowed;
+      }
+      #scanBtn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      #downloadLargestBtn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        background: #2196F3;
+        margin-top: 5px;
+      }
+      #downloadLargestBtn:hover {
+        background: #1976D2;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Video Downloader</h3>
+    <button id="scanBtn">Scan for Videos</button>
+    <button id="downloadLargestBtn">Download Largest Video</button>
+    <div id="status">Click "Scan for Videos" to find MP4 files on this page.</div>
+    <div id="videoList"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
